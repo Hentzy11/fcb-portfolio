@@ -1,0 +1,51 @@
+/*Cascading Style Sheets*/
+* {
+	font-family: "Roboto", sans-serif; 
+}
+h1, h2 {
+	font-family: "Montserrat", sans-serif;
+}
+img {
+	height: 250px;
+	width: 250px;
+}
+.jumbotron {
+	background-color: lightblue ;
+}
+#landing {
+	height: 80vh;
+	direction: flex;
+	flex-direction: column ;
+	justify-content: center;
+	align-items: center;
+}
+.Describe {
+	color: black;
+	margin-top: 10px;
+}
+/* Centers the content vertically using flex */
+#gallery {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	height: 75vh;
+}
+/*Remove the bullets of the uls/list*/
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+/*Changes the color of the section headers*/
+h2 {
+	color: lightblue;
+}
+/*Adds spacing and borders to each section*/
+.tools {
+	padding: 25px;
+	height: 200px;
+	border: 5px solid lightblue;);
+	margin: 20px;
+	width: 75%;
+	color: white;
+}
