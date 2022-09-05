@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
+	<style>
+		
+		</style>
 	<head>
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Hentol Toledo | Web Developer Portfolio</title>
 		<!-- Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        
+        <link rel="stylesheet" href="https://fontawesome.com/v6/icons/facebook-f?s=solid&f=brands">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@200;300;400&family=Roboto&display=swap" rel="stylesheet">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 		<!-- Personal CSS -->
@@ -16,55 +28,181 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top ">
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mx-auto">
-	      <li class="nav-item ">
-	        <a class="nav-link" href="#landing">Home</a>
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#home">Home</a>
 	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#gallery">Gallery</a>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#services">Services</a>
 	      </li>
-	    </ul>	    
+		  <li class="nav-item active">
+	        <a class="nav-link" href="#about">About</a>
+	      </li>
+		  <li class="nav-item active">
+	        <a class="nav-link" href="#work">My Work</a>
+	      </li>
+	    </ul>	
+		<form action="connect.php">
+			<div class="search-container">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+			
+		  </form>    
 	  </div>
 	</nav>
-		<!-- wrapper/ container for our page -->
-		<div class="container-fluid">
-			<section class="jumbotron text-center mt-3" id="landing">
-				<h1>Full Stack Web Developer</h1>
-				<p>Hi! My name is Hentol and I'm creating my own portfolio</p>
-				<img src="Formal.jpg"/>
-				<h3 class=" Describe ">Innovator | Teacher | Tech-enthusiast</h3>
-				<h4>Please Sign up to check out my projects</h4>
-				<input type="username" placeholder="Enter Username">
-        		<input type="password" placeholder="Enter Password">
-        <button>Sign Up!</button>
-			</section>
-
-			<section id="gallery" class="text-center bg-info">
-				<div class="tools">
-					<h2>Languages I speak:</h2>
-					<!-- Unordered list -->
-					<ul>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-					</ul>
-				</div>
-				<div class="tools">
-					<h2>Tools I use:</h2>
-					<ul>
-						<li>Git Bash/Terminal</li>
-						<li>Sublime Text</li>
-						<li>GitHub</li>
-					</ul>
-				</div>
-			</section>
-		</div>
+		<!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Hentol Toledo</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Developer</p>
+            <img src="images/ako.jpg" alt="EDIWOW" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>Design and its development are crucial in this fast-pace-digitalization-world, so in order to have an efficient development process, it takes a lot of planning and designing based on the experience of end users. Adding more unique features is the key to becoming a unicorn in a place that is full of horses. </p>
+                </div> <!-- / servicce -->
+                
+                <div class="service">
+                    <h3>E-Commerce</h3>
+                    <p>As a developer, I also believe that in order to be successful in business, creating an e-commerce website is fundamentally essential and markets all your goods and services. Adding a well-posted product on the internet will be an edge for a store; it adds more scalability for your markets.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Mentoring</h3>
+                    <p>As a fresh grad, I aspire to be an educator someday, which would help me to gather ideas that create more sufficient methods and functionalities in development.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Designer & developer</p>
+           
+           <div class="about-me__body">
+                <p>I am Hentol Toledo , I come from a small school in the province of bulacan. I am the eldest of five siblings.</p>
+               <p>I have been praised for my ability to listen to other people and am an outgoing person
+                who can communicate with people of all social classes. I am capable of taking
+                responsibility for my own work and my own objectives, but I also love collaborating with
+                others to accomplish a shared objectives. My personality includes reflection heavily,
+                which has helped me to cultivate a great sense of detail without losing sight of the big
+                picture</p>
+               <p>During my last year in college, I was chosen to lead a thesis project since I was always
+                given a leadership role during my college years. In this role, I gained experience
+                managing people as well as being proactive in managing crucial tasks and deadlines.
+                Conducting research requires the entire process to have an efficient and innovative
+                solution to critical problems in a certain subject for our project work, so I had to analyze
+                the data before making recommendations in a presentation. In addition, I used to
+                prioritize and organize data or information so that I was able to move faster than
+                expected.</p>
+           </div>
+           
+           <img src="images/Formal.jpg" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img href="images/i.png" src="images/e.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/i.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/o.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/q.png" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/r.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/Static.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 07 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="images/y.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 08 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/u.png" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 09 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/w.png" alt="" class="portfolio__img">
+                </a>
+                
+                
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="" class="footer__link">Hentoltoledo110302@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/hentol-toledo-0a7208246/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.facebook.com/d091uo">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Hentzy11">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="index.js"></script>
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
